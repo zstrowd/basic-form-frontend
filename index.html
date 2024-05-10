@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">College Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform!</p>
+
+    <form id="survey-form">
+
+        <!--User input text fields-->
+        <fieldset>
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required></label>
+            <label for="age" id="number-label">Age (optional) <input type="number" id="number" placeholder="Please enter your age" required min="12" max="120"></label>
+        </fieldset>
+
+        <!--Dropdown box section-->
+        <fieldset>
+            <label for="dropdown"> Which option best describes your current role?
+            <select name="dropdown" id="dropdown">
+                <option value="">Select current role</option>
+                <option value="1"> Freshmen</option>
+                <option value="2">Softmore</option>
+                <option value="3">Junior/Senior</option>
+                <option value="4">Graduate</option>
+                <option value="5">Other</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <!--Radio button select-->
+        <fieldset>
+            <legend>Would you recommend others to go to college?</legend>
+            <label for="definitely"><input type="radio" name="recomendation" id="definitely" class="inline" value="0">Definitely</label>
+            <label for="maybe"><input type="radio" name="recomendation" id="maybe" class="inline" value="1">Maybe</label>
+            <label for="uncertain"><input type="radio" name="recomendation" id="uncertain" class="inline" value="2">Uncertain</label>
+        </fieldset>
+
+        <!--Checkbox Section-->
+        <fieldset>
+            <legend>What would you like to see improved?</legend>
+            <label for="courses" class="inline"><input type="checkbox" id="front-end" name="courses" value="course" class="inline">Courses</label>
+            <label for="activities"><input type="checkbox" id="activities" name="activities" value="act" class="inline">On campus activities</label>
+            <label for="registration"><input type="checkbox" id="registration" name="registration" value="reg" class="inline">Registration</label>
+            <label for="sports"><input type="checkbox" id="sports" name="sports" value="open" class="inline">Sports</label>
+            <label for="housing"><input type="checkbox" id="housing" name="housing" value="house" class="inline">Housing</label>
+            <label for="other"><input type="checkbox" id="other" name="other" value="oth" class="inline">Other</label>
+        </fieldset>
+
+        <!--Extra commens section-->
+        <fieldset>
+            <legend>Any comments or suggestions?</legend>
+            <label for="comments">
+                <textarea name="comment" id="comments" cols="30" rows="3" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" name="submit" value="Submit" id="submit">
+    </form>
+
+    <footer>
+        Powered by <a href="#" class="temp"> Zachary Strowd</a> (Please note that failing to cooperate means termination with our guidelines)
+    </footer>
+</body>
+</html>
